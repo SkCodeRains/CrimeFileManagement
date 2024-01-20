@@ -1,0 +1,65 @@
+/*............About CyberComplaints..............*/
+
+.collapsContainer{
+  margin-left:5%;
+  margin-right:20%;
+}
+
+.collapsible {
+  background-color: white;
+  /*background-color: #4682B4;*/
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid silver;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aactive, .collapsible:hover{
+  background-color: #4682B4;
+  color: white;
+  border: 1px solid #4682B4;
+}
+
+.content{
+  color:black;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/*............About AnonyComplaints..............*/
+
+
+.acollapsible {
+  background-color:  #4682B4;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid silver;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.contents{
+  color:black;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/*---- SafetyTips Page ----*/
+
+.downloadlink a{
+	Color:#4682B4;
+	font-weight: bold;
+}

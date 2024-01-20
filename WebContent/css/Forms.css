@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+input[type=text], input[type=file],input[type=number], input[type=email], input[type=password], select, textarea{
+  width: 120%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: horizontal;
+  background-color: none;
+}
+#susdrop{
+  width: 80%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: horizontal;
+  background-color: none;
+}
+
+input[type=date], input[type=time]{
+  width: 60%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: vertical;
+  background-color: none;
+}
+input[type=submit], input[type=button] {
+  background-color: #000080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=button]:hover{
+  background-color: rgb(247, 95, 95);
+  border:none;
+}
+
+.containerbox{
+    margin-top:30px;
+    margin-left: 50px;
+    margin-right: 300px;
+    
+    background-color: #f0f8ff;
+}
+
+
+#termacc{
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}

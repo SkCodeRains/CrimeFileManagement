@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<title>Online Crime File Management</title>
+<link rel="shortcut icon" href="Images/Satyamev.png" type="images/png"/>
+
+<style>
+
+/* Thick red border */
+hr.redline {
+  border: 2px solid red;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+.navbar .icon {
+  display: none;
+} 
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<table>
+<tr>
+<td>&nbsp;&nbsp;<img src="Images/Satyamev1.png" height="120px">
+<td><h2 style="color: DarkBlue">&nbsp;&nbsp; Online Crime File Management &nbsp;&nbsp;</h2>
+<td>&nbsp;&nbsp;<img src="Images/swachhata.png" height="100px">
+<td>&nbsp;&nbsp;<img src="Images/logo.png" height="125px">
+</tr>
+</table>
+
+<div id="myHeader">
+<div class="navbar" id="myNavbar">
+  <a href="index.jsp" class="active">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Report Women/Child Related Crime</button>
+    <div class="dropdown-content">
+      <a href="AnonyTermCondition.jsp">Report Anonymously</a>
+      <a href="AboutAnonyComplaint.jsp">Read About CP/RGR ! </a>
+        
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+     <button class="dropbtn">Report Other Cyber Crime</button>
+     <div class="dropdown-content">
+       <a href="TermCondition.jsp">Report Cyber Crime</a>
+       <a href="AboutCyberComplaint.jsp">Read About Cyber Crime !</a>
+        
+     </div>
+   </div> 
+   
+   <div class="dropdown">
+     <button class="dropbtn">Track &amp; Login</button>
+     <div class="dropdown-content">
+       <div class="trackstatus">
+         <a href="TrackStatus.jsp">Track Your Report</a>
+         <a href="AuthorizedLogin.jsp">Authorized Login</a>
+        </div>
+     </div>
+   </div> 
+   
+  <a href="SafetyTips.jsp">Safety &amp; Awareness</a>
+  <a href="Helpline.jsp">Helpline</a>
+  <a href="ContactUs.jsp" class="">About Us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<!-- <hr class="redline"> -->
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
